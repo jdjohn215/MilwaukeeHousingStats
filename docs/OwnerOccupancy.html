@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-0.9.612">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Milwaukee Housing Trends since 2018 - 2&nbsp; Owner occupancy rates</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./InvestorActivity.html" rel="next">
+<link href="./intro.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+<script src="site_libs/core-js-2.5.3/shim.min.js"></script>
+<script src="site_libs/react-17.0.0/react.min.js"></script>
+<script src="site_libs/react-17.0.0/react-dom.min.js"></script>
+<script src="site_libs/reactwidget-1.0.0/react-tools.js"></script>
+<script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<script src="site_libs/reactable-binding-0.2.3/reactable.js"></script>
+
+
+</head>
+
+<body class="nav-sidebar floating slimcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Owner occupancy rates</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Milwaukee Housing Trends since 2018</a> 
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./OwnerOccupancy.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Owner occupancy rates</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./InvestorActivity.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Investor Activity</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Competition.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Consequences of competition</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./PropertyFlows.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Property Flows</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Summary</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#citywide" id="toc-citywide" class="nav-link active" data-scroll-target="#citywide"> <span class="header-section-number">2.1</span> Citywide</a></li>
+  <li><a href="#by-aldermanic-district" id="toc-by-aldermanic-district" class="nav-link" data-scroll-target="#by-aldermanic-district"> <span class="header-section-number">2.2</span> By Aldermanic District</a></li>
+  <li><a href="#neighborhoods" id="toc-neighborhoods" class="nav-link" data-scroll-target="#neighborhoods"> <span class="header-section-number">2.3</span> Neighborhoods</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Owner occupancy rates</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="citywide" class="level2 page-columns page-full" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="citywide"><span class="header-section-number">2.1</span> Citywide</h2>
+<div class="page-columns page-full"><p>Owner-occupancy reached a modern high in 2005, when about 80% of Milwaukee’s houses were home to their owner.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> That fell precipitously for over a decade thereafter, reaching a low of about 68% in 2018. Then, the city finally turned the corner on the long housing crisis. Each year since 2018 has seen sustained growth in owner occupancy. Owner occupancy now stands at 70%. There are 2,860 more owner-occupied houses in Milwaukee now than at the end of 2018.</p><div class="no-row-height column-margin column-container"><li id="fn1" role="doc-endnote"><p><sup>1</sup>&nbsp;Owner-occupancy is determined by comparing the address to which the City sends the property tax bill with the address(es) at the property in question. In the case of multi-unit homes, like a duplex or triplex, an owner-occupied household may also contain renting households.</p></li></div></div>
+<p>Owner-occupancy has always been highest for single family homes, followed by condos, then duplexes and triplexes. Each category followed a similar trajectory of steep declines until the mid or late 2010s, followed by a recent recovery.</p>
+<ul>
+<li><p>Single family homeownership grew by 1,460 or 1.5% of all homes since 2018.</p></li>
+<li><p>Condo homeownership grew by 320 or 2.5%</p></li>
+<li><p>Duplex homeownership grew by 1,000 or 2.8%</p></li>
+<li><p>Triplex+ homeownership grew by 80 or 2.4%</p></li>
+</ul>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">overall owner-occupancy</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">by home type</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">table</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="OwnerOccupancy_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="OwnerOccupancy_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div class="cell">
+<div class="cell-output-display">
+
+<div id="mucwsdddbi" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#mucwsdddbi .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#mucwsdddbi .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#mucwsdddbi .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#mucwsdddbi .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#mucwsdddbi .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#mucwsdddbi .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#mucwsdddbi .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#mucwsdddbi .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#mucwsdddbi .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#mucwsdddbi .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#mucwsdddbi .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#mucwsdddbi .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#mucwsdddbi .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#mucwsdddbi .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#mucwsdddbi .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#mucwsdddbi .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#mucwsdddbi .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mucwsdddbi .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#mucwsdddbi .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#mucwsdddbi .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mucwsdddbi .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#mucwsdddbi .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#mucwsdddbi .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#mucwsdddbi .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mucwsdddbi .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#mucwsdddbi .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#mucwsdddbi .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#mucwsdddbi .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#mucwsdddbi .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mucwsdddbi .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#mucwsdddbi .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mucwsdddbi .gt_left {
+  text-align: left;
+}
+
+#mucwsdddbi .gt_center {
+  text-align: center;
+}
+
+#mucwsdddbi .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#mucwsdddbi .gt_font_normal {
+  font-weight: normal;
+}
+
+#mucwsdddbi .gt_font_bold {
+  font-weight: bold;
+}
+
+#mucwsdddbi .gt_font_italic {
+  font-style: italic;
+}
+
+#mucwsdddbi .gt_super {
+  font-size: 65%;
+}
+
+#mucwsdddbi .gt_two_val_uncert {
+  display: inline-block;
+  line-height: 1em;
+  text-align: right;
+  font-size: 60%;
+  vertical-align: -0.25em;
+  margin-left: 0.1em;
+}
+
+#mucwsdddbi .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#mucwsdddbi .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#mucwsdddbi .gt_slash_mark {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  vertical-align: 0.15em;
+}
+
+#mucwsdddbi .gt_fraction_numerator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: 0.45em;
+}
+
+#mucwsdddbi .gt_fraction_denominator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: -0.05em;
+}
+</style>
+<table class="gt_table">
+  <thead class="gt_header">
+    <tr>
+      <th colspan="7" class="gt_heading gt_title gt_font_normal" style="">Owner occupancy rates by property type</th>
+    </tr>
+    <tr>
+      <th colspan="7" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style="">City of Milwaukee, selected years</th>
+    </tr>
+  </thead>
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1"></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="2" colspan="1">parcels</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="2" colspan="1">owner occupied</th>
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="4">
+        <span class="gt_column_spanner">by property type</span>
+      </th>
+    </tr>
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">condo</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">duplex</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">single family</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">triplex+</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_right gt_stub">1990</td>
+<td class="gt_row gt_right">133,632</td>
+<td class="gt_row gt_right">79.3%</td>
+<td class="gt_row gt_right">77.8%</td>
+<td class="gt_row gt_right">58.0%</td>
+<td class="gt_row gt_right">90.2%</td>
+<td class="gt_row gt_right">32.9%</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">1995</td>
+<td class="gt_row gt_right">132,418</td>
+<td class="gt_row gt_right">78.9%</td>
+<td class="gt_row gt_right">79.6%</td>
+<td class="gt_row gt_right">56.7%</td>
+<td class="gt_row gt_right">89.7%</td>
+<td class="gt_row gt_right">34.3%</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2000</td>
+<td class="gt_row gt_right">131,567</td>
+<td class="gt_row gt_right">79.1%</td>
+<td class="gt_row gt_right">79.0%</td>
+<td class="gt_row gt_right">57.6%</td>
+<td class="gt_row gt_right">89.4%</td>
+<td class="gt_row gt_right">34.0%</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2005</td>
+<td class="gt_row gt_right">134,276</td>
+<td class="gt_row gt_right">79.9%</td>
+<td class="gt_row gt_right">81.3%</td>
+<td class="gt_row gt_right">59.1%</td>
+<td class="gt_row gt_right">89.6%</td>
+<td class="gt_row gt_right">35.4%</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2010</td>
+<td class="gt_row gt_right">136,840</td>
+<td class="gt_row gt_right">74.2%</td>
+<td class="gt_row gt_right">72.9%</td>
+<td class="gt_row gt_right">52.4%</td>
+<td class="gt_row gt_right">84.8%</td>
+<td class="gt_row gt_right">30.1%</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2015</td>
+<td class="gt_row gt_right">135,136</td>
+<td class="gt_row gt_right">69.1%</td>
+<td class="gt_row gt_right">70.4%</td>
+<td class="gt_row gt_right">46.5%</td>
+<td class="gt_row gt_right">78.9%</td>
+<td class="gt_row gt_right">24.2%</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2016</td>
+<td class="gt_row gt_right">134,969</td>
+<td class="gt_row gt_right">68.5%</td>
+<td class="gt_row gt_right">71.0%</td>
+<td class="gt_row gt_right">45.8%</td>
+<td class="gt_row gt_right">78.2%</td>
+<td class="gt_row gt_right">23.0%</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2017</td>
+<td class="gt_row gt_right">134,746</td>
+<td class="gt_row gt_right">68.6%</td>
+<td class="gt_row gt_right">71.9%</td>
+<td class="gt_row gt_right">45.7%</td>
+<td class="gt_row gt_right">78.1%</td>
+<td class="gt_row gt_right">22.7%</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2018</td>
+<td class="gt_row gt_right">134,742</td>
+<td class="gt_row gt_right">68.4%</td>
+<td class="gt_row gt_right">72.4%</td>
+<td class="gt_row gt_right">45.7%</td>
+<td class="gt_row gt_right">77.8%</td>
+<td class="gt_row gt_right">23.5%</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2019</td>
+<td class="gt_row gt_right">134,958</td>
+<td class="gt_row gt_right">68.7%</td>
+<td class="gt_row gt_right">71.8%</td>
+<td class="gt_row gt_right">46.5%</td>
+<td class="gt_row gt_right">78.0%</td>
+<td class="gt_row gt_right">24.5%</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2020</td>
+<td class="gt_row gt_right">135,048</td>
+<td class="gt_row gt_right">69.2%</td>
+<td class="gt_row gt_right">72.9%</td>
+<td class="gt_row gt_right">46.9%</td>
+<td class="gt_row gt_right">78.5%</td>
+<td class="gt_row gt_right">25.3%</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2021</td>
+<td class="gt_row gt_right">134,927</td>
+<td class="gt_row gt_right">69.8%</td>
+<td class="gt_row gt_right">74.0%</td>
+<td class="gt_row gt_right">47.8%</td>
+<td class="gt_row gt_right">79.0%</td>
+<td class="gt_row gt_right">25.7%</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2022</td>
+<td class="gt_row gt_right">135,140</td>
+<td class="gt_row gt_right">70.3%</td>
+<td class="gt_row gt_right">74.8%</td>
+<td class="gt_row gt_right">48.5%</td>
+<td class="gt_row gt_right">79.3%</td>
+<td class="gt_row gt_right">25.9%</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="by-aldermanic-district" class="level2 page-columns page-full" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="by-aldermanic-district"><span class="header-section-number">2.2</span> By Aldermanic District</h2>
+<div class="page-columns page-full"><p>Owner-occupancy has increased in each of the city’s 15 aldermanic districts, relative to 2018. <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p><div class="no-row-height column-margin column-container"><li id="fn2" role="doc-endnote"><p><sup>2</sup>&nbsp;Aldermanic districts are a useful way to compare trends within the city because they divide the population into 15 equal chunks. Of course, this doesn’t translate to equal numbers of houses because the mix of single family homes, apartment buildings, and duplexes varies between districts. This report exclusively uses the aldermanic district boundaries drawn after the 2022 census.</p></li></div></div>
+<p>The largest raw increase in the number of owner-occupied houses occured in the 10th and 5th districts, along the west and northwest fringe of the city. Compared to 2018, there are now 319 more owner occupiers in the 5th and 257 in the 10th. Combined, the share of owner-occupied homes in this part of the city has risen by 2.6 percentage points–from 76.6% in 2018 to 79.2% in 2022.</p>
+<p>The 6th, 7th, and 15th districts–which make up the near northern core of the city–saw a cumulative increase of 653 more homeowners. This is a 1.9 percentage point increase in the share of houses occupied by a homeowner.</p>
+<p>The largest proportional increases came in the 3rd (East Side) and 4th (downtown) districts. Together, they added 408. The owner-occupied share has grown from 3.6 percentage points–from 66% in 2018 to 69.6% in 2022.</p>
+<p>Bay View and neighboring parts of the south side are covered by the 14th district. Here, homeownership increased by 201, or 1.8 points.</p>
+<p>Homeownership grew by 380 (or 1.7% of the housing stock) on the far south and southwest sides (the 11th and 13th districts).</p>
+<p>Homeownership grew the least on the near south side. The 12th district, in particular, saw almost no growth in owner-occupancy at all.</p>
+<div class="cell page-columns page-full" data-fig.asp="2">
+
+<div class="no-row-height column-margin column-container"><div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="OwnerOccupancy_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">2022 Aldermanic Districts</figcaption><p></p>
+</figure>
+</div>
+</div></div></div>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">recent changes</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">long term trend</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">shift maps</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div class="cell">
+<div class="cell-output-display">
+
+<div id="gppwaexnne" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#gppwaexnne .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#gppwaexnne .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#gppwaexnne .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#gppwaexnne .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#gppwaexnne .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#gppwaexnne .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#gppwaexnne .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#gppwaexnne .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#gppwaexnne .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#gppwaexnne .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#gppwaexnne .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#gppwaexnne .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#gppwaexnne .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#gppwaexnne .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#gppwaexnne .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#gppwaexnne .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#gppwaexnne .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#gppwaexnne .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#gppwaexnne .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#gppwaexnne .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#gppwaexnne .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#gppwaexnne .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#gppwaexnne .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#gppwaexnne .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#gppwaexnne .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#gppwaexnne .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#gppwaexnne .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#gppwaexnne .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#gppwaexnne .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#gppwaexnne .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#gppwaexnne .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#gppwaexnne .gt_left {
+  text-align: left;
+}
+
+#gppwaexnne .gt_center {
+  text-align: center;
+}
+
+#gppwaexnne .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#gppwaexnne .gt_font_normal {
+  font-weight: normal;
+}
+
+#gppwaexnne .gt_font_bold {
+  font-weight: bold;
+}
+
+#gppwaexnne .gt_font_italic {
+  font-style: italic;
+}
+
+#gppwaexnne .gt_super {
+  font-size: 65%;
+}
+
+#gppwaexnne .gt_two_val_uncert {
+  display: inline-block;
+  line-height: 1em;
+  text-align: right;
+  font-size: 60%;
+  vertical-align: -0.25em;
+  margin-left: 0.1em;
+}
+
+#gppwaexnne .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#gppwaexnne .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#gppwaexnne .gt_slash_mark {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  vertical-align: 0.15em;
+}
+
+#gppwaexnne .gt_fraction_numerator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: 0.45em;
+}
+
+#gppwaexnne .gt_fraction_denominator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: -0.05em;
+}
+</style>
+<table class="gt_table">
+  <thead class="gt_header">
+    <tr>
+      <th colspan="7" class="gt_heading gt_title gt_font_normal gt_bottom_border" style="font-weight: bold;">Owner occupancy of houses in Milwaukee's Aldermanic Districts, 2018 - 2022</th>
+    </tr>
+    
+  </thead>
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1"></th>
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="2" style="font-weight: bold;">
+        <span class="gt_column_spanner">parcels</span>
+      </th>
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="2" style="font-weight: bold;">
+        <span class="gt_column_spanner">share</span>
+      </th>
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="2" style="font-weight: bold;">
+        <span class="gt_column_spanner">shift '18 to '22</span>
+      </th>
+    </tr>
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">2018</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">2022</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">2018</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">2022</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">parcels</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">share</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_right gt_stub">1st</td>
+<td class="gt_row gt_right">5,714</td>
+<td class="gt_row gt_right">5,861</td>
+<td class="gt_row gt_right">55.1%</td>
+<td class="gt_row gt_right">56.3%</td>
+<td class="gt_row gt_right">147</td>
+<td class="gt_row gt_right">1.2%</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2nd</td>
+<td class="gt_row gt_right">6,064</td>
+<td class="gt_row gt_right">6,256</td>
+<td class="gt_row gt_right">64.5%</td>
+<td class="gt_row gt_right">66.4%</td>
+<td class="gt_row gt_right">192</td>
+<td class="gt_row gt_right">1.9%</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">3rd</td>
+<td class="gt_row gt_right">4,290</td>
+<td class="gt_row gt_right">4,539</td>
+<td class="gt_row gt_right">65.1%</td>
+<td class="gt_row gt_right">68.8%</td>
+<td class="gt_row gt_right">249</td>
+<td class="gt_row gt_right">3.7%</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">4th</td>
+<td class="gt_row gt_right">2,481</td>
+<td class="gt_row gt_right">2,640</td>
+<td class="gt_row gt_right">67.6%</td>
+<td class="gt_row gt_right">71.1%</td>
+<td class="gt_row gt_right">159</td>
+<td class="gt_row gt_right">3.5%</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">5th</td>
+<td class="gt_row gt_right">9,248</td>
+<td class="gt_row gt_right">9,567</td>
+<td class="gt_row gt_right">80.2%</td>
+<td class="gt_row gt_right">83.0%</td>
+<td class="gt_row gt_right">319</td>
+<td class="gt_row gt_right">2.7%</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">6th</td>
+<td class="gt_row gt_right">4,350</td>
+<td class="gt_row gt_right">4,552</td>
+<td class="gt_row gt_right">49.4%</td>
+<td class="gt_row gt_right">51.1%</td>
+<td class="gt_row gt_right">202</td>
+<td class="gt_row gt_right">1.7%</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">7th</td>
+<td class="gt_row gt_right">6,018</td>
+<td class="gt_row gt_right">6,233</td>
+<td class="gt_row gt_right">55.0%</td>
+<td class="gt_row gt_right">56.8%</td>
+<td class="gt_row gt_right">215</td>
+<td class="gt_row gt_right">1.8%</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">8th</td>
+<td class="gt_row gt_right">4,877</td>
+<td class="gt_row gt_right">4,998</td>
+<td class="gt_row gt_right">68.4%</td>
+<td class="gt_row gt_right">70.1%</td>
+<td class="gt_row gt_right">121</td>
+<td class="gt_row gt_right">1.7%</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">9th</td>
+<td class="gt_row gt_right">6,360</td>
+<td class="gt_row gt_right">6,533</td>
+<td class="gt_row gt_right">73.1%</td>
+<td class="gt_row gt_right">74.8%</td>
+<td class="gt_row gt_right">173</td>
+<td class="gt_row gt_right">1.7%</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">10th</td>
+<td class="gt_row gt_right">7,377</td>
+<td class="gt_row gt_right">7,634</td>
+<td class="gt_row gt_right">72.5%</td>
+<td class="gt_row gt_right">75.0%</td>
+<td class="gt_row gt_right">257</td>
+<td class="gt_row gt_right">2.5%</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">11th</td>
+<td class="gt_row gt_right">9,994</td>
+<td class="gt_row gt_right">10,198</td>
+<td class="gt_row gt_right">87.8%</td>
+<td class="gt_row gt_right">89.6%</td>
+<td class="gt_row gt_right">204</td>
+<td class="gt_row gt_right">1.8%</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">12th</td>
+<td class="gt_row gt_right">3,576</td>
+<td class="gt_row gt_right">3,585</td>
+<td class="gt_row gt_right">55.2%</td>
+<td class="gt_row gt_right">55.3%</td>
+<td class="gt_row gt_right">9</td>
+<td class="gt_row gt_right">0.0%</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">13th</td>
+<td class="gt_row gt_right">9,201</td>
+<td class="gt_row gt_right">9,377</td>
+<td class="gt_row gt_right">89.0%</td>
+<td class="gt_row gt_right">90.6%</td>
+<td class="gt_row gt_right">176</td>
+<td class="gt_row gt_right">1.7%</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">14th</td>
+<td class="gt_row gt_right">8,958</td>
+<td class="gt_row gt_right">9,159</td>
+<td class="gt_row gt_right">78.3%</td>
+<td class="gt_row gt_right">80.2%</td>
+<td class="gt_row gt_right">201</td>
+<td class="gt_row gt_right">1.8%</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">15th</td>
+<td class="gt_row gt_right">3,628</td>
+<td class="gt_row gt_right">3,864</td>
+<td class="gt_row gt_right">46.5%</td>
+<td class="gt_row gt_right">48.9%</td>
+<td class="gt_row gt_right">236</td>
+<td class="gt_row gt_right">2.4%</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="OwnerOccupancy_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="OwnerOccupancy_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="neighborhoods" class="level2 page-columns page-full" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="neighborhoods"><span class="header-section-number">2.3</span> Neighborhoods</h2>
+<div class="page-columns page-full"><p>Ten neighborhoods saw at least 5% of their total housing stock become owner occupied from 2018 to 2022.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> They are Brewer’s Hill (+8%), Florist Highlands (+7%), Lenox Heights (+5%), Martin Drive (+6%), Midtown (+5%), Murray Hill (+5%), Riverside Park (+6%), Riverwest (+5%), Southgate (+5%), and Yankee Hill (+5%).</p><div class="no-row-height column-margin column-container"><li id="fn3" role="doc-endnote"><p><sup>3</sup>&nbsp;This list is limited to neighborhoods with at least 100 residential properties.</p></li></div></div>
+<p>Notably, this list includes neighborhoods from across the city, but there are still clear regional patterns. Murray Hill, Riverside Park, and Yankee Hill are all on the east side with Brewer’s Hill and Riverwest just across the river. Midtown and Martin Drive are the near west side. Lenox Heights and Florist Highlands are on the north and northwest sides. Of the entire south side, only Southgate makes this list.</p>
+<p>No neighborhoods of at least 100 houses saw a loss of owner occupancy exceeding 4%. In fact, only 3 neighborhoods saw a double digit decline in total owner-occupied parcels. Those neighborhoods are Franklin Heights (-30), Lincoln Village (-25), and Mill Valley (-13).</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">map</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">table</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="OwnerOccupancy_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid" width="576"></p>
+</div>
+</div>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div class="cell">
+<div class="cell-output-display">
+
+<div id="htmlwidget-08cd7bdd40a9918da501" class="reactable html-widget" style="width:630px;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-08cd7bdd40a9918da501">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"city_nhood":["Alcott Park","Alverno","Arlington Gardens","Arlington Heights","Avenues West","Baran Park","Bay View","Bluemound Heights","Borchert Field","Bradley Estates","Brewer's Hill","Brynwood","Buchel Park","Burnham Park","Calumet Farms","Cambridge Heights","Cannon Park","Capitol Heights","Castle Manor","Clarke Square","Clayton Crest","Clock Tower Acres","Cold Spring Park","College Heights","Columbus Park","Concordia","Cooper Park","Copernicus Park","Dineen Park","Downer Woods","Dretzka Park","Enderis Park","Estabrook Park","Euclid Park","Fair Park","Fairfield","Fairview","Fernwood","Florist Highlands","Forest Home Hills","Franklin Heights","Freedom Village","Garden Homes","Golden Gate","Golden Valley","Goldman Park","Gra-Ram","Graceland","Grantosa","Granville Station","Granville Woods","Grasslyn Manor","Green Moor","Grover Heights","Halyard Park","Hampton Heights","Harambee","Harbor View","Harder's Oaks","Havenwoods","Hawley Farms","Hawthorne Glen","Heritage Heights","Highwood Estates","Hillside","Historic Mitchell Street","Historic Third Ward","Holler Park","Honey Creek Manor","Honey Creek Parkway","Jackson Park","Johnson's Woods","Juneau Town","Kilbourn Town","King Park","Kops Park","Land Bank","Layton Park","Lenox Heights","Lincoln Creek","Lincoln Park","Lincoln Village","Lindsay Park","Little Menomonee Parkway","Long View","Lower East Side","Lyons Park","Mack Acres","Maitland Park","Maple Tree","Martin Drive","Mc Govern Park","Melody View","Menomonee River Hills","Menomonee River Hills East","Menomonee River Parkway","Menomonee River Valley","Merrill Park","Metcalfe Park","Midtown","Mill Valley","Miller Valley","Mitchell Field","Mitchell Park","Mitchell West","Morgan Heights","Morgandale","Mount Mary","Mount Olivet","Murray Hill","Muskego Way","Nash Park","National Park","New Coeln","North Division","North Granville","North Meadows","Northpoint","Northridge","Northridge Lakes","Old North Milwaukee","Park Knoll","Park Place","Park View","Park West","Parkway Hills","Pheasant Run","Pollber Heights","Polonia","Red Oak Heights","Ridgeview","River Bend","Riverside Park","Riverton Heights","Riverwest","Rolling Green","Roosevelt Grove","Root Creek","Rufus King","Saint Joseph","Saveland Park","Servite Woods","Sherman Park","Silver City","Silver Spring","Silver Swan","Southgate","Southpoint","St. Amelian's","Story Hill","Sunset Heights","The Valley / Pigsville","Thurston Woods","Timmerman Airport","Timmerman West","Tippecanoe","Town & Country Manor","Town Of Lake","Triangle","Triangle North","Tripoli Park","Upper East Side","Uptown","Valhalla","Valley Forge","Veterans Affairs","Vogel Park","Wahl Park","Walker's Point","Walnut Hill","Washington Heights","Washington Park","Wedgewood","West View","Whispering Hills","White Manor","Wick Field","Williamsburg","Wilson Park","Woodland Court","Wyrick Park","Yankee Hill"],"parcels_2018":[442,150,587,601,80,71,4145,819,364,748,394,0,13,1048,328,286,379,1130,712,543,497,191,142,350,776,128,1061,436,613,509,20,795,6,421,304,172,1229,911,211,485,919,30,313,247,933,475,457,531,281,196,1,1038,190,38,99,1146,940,110,139,85,514,93,174,433,21,764,533,161,789,369,2151,715,594,173,93,939,13,1269,289,1134,809,1194,799,228,569,1454,488,65,298,160,251,568,153,1662,516,181,125,277,165,661,294,57,47,3,747,445,2139,658,54,417,1015,677,336,142,616,36,220,467,106,280,1417,359,60,111,534,136,420,59,858,227,78,457,129,407,1804,418,812,447,910,819,518,338,816,573,1476,284,391,474,479,447,848,95,651,39,769,1859,478,1714,94,133,192,496,714,363,53,1,269,440,574,234,1488,348,431,355,187,524,132,286,549,122,205,370],"parcels_2022":[448,151,596,604,89,65,4217,838,364,755,446,0,13,1073,341,298,371,1162,720,547,504,187,146,358,822,140,1085,441,627,509,27,809,7,427,312,176,1248,931,231,490,889,27,324,258,970,484,461,556,296,206,2,1098,198,41,106,1190,1009,113,142,88,519,89,175,453,18,775,569,160,802,366,2200,733,631,172,100,985,14,1294,310,1169,823,1169,828,226,593,1543,499,67,303,177,278,581,149,1716,526,184,124,293,169,753,281,59,46,4,763,454,2174,664,56,451,1026,713,352,146,625,37,226,474,116,279,1444,359,70,109,547,140,423,62,896,225,78,463,144,412,1951,434,833,459,908,883,523,345,846,595,1479,296,417,481,488,461,891,95,676,42,786,1890,498,1750,97,127,202,517,753,372,55,1,269,444,581,239,1551,383,436,362,183,537,126,298,566,116,202,399],"share_2018":[90.9465020576132,89.2857142857143,79.2172739541161,51.2361466325661,31.25,75.531914893617,76.8019269964795,75.9036144578313,42.2273781902552,73.405299313052,65.8862876254181,0,100,72.1266345492085,82,57.5452716297787,83.4801762114538,68.1544028950543,90.5852417302799,55.0709939148073,92.5512104283054,55.5232558139535,50.8960573476703,93.5828877005348,68.6725663716814,64.9746192893401,87.0385561936013,92.1775898520084,66.6304347826087,75.9701492537313,80,82.1280991735537,60,92.5274725274725,71.6981132075472,51.3432835820895,86.2456140350877,82.6678765880218,71.043771043771,59.2909535452323,45.6986573843859,21.5827338129496,55.595026642984,92.1641791044776,82.2751322751323,89.1181988742964,91.7670682730924,67.1302149178255,76.566757493188,57.6470588235294,50,65.8211794546608,90.4761904761905,39.5833333333333,74.4360902255639,54.4418052256532,41.7036379769299,75.3424657534247,92.6666666666667,48.0225988700565,85.8096828046745,76.2295081967213,92.5531914893617,85.9126984126984,52.5,48.4157160963245,79.7904191616767,96.4071856287425,86.9900771775083,83.4841628959276,87.6528117359413,77.4647887323944,73.697270471464,80.8411214953271,58.4905660377358,80.2564102564103,68.4210526315789,75.2669039145907,62.8260869565217,57.4759249873289,57.1731448763251,58.5868498527969,75.2354048964218,82.9090909090909,62.253829321663,65.0559284116331,89.051094890511,92.8571428571429,92.8348909657321,41.343669250646,61.0705596107056,54.6153846153846,75.7425742574257,82.6043737574553,78.0635400907716,79.0393013100437,83.8926174496644,52.561669829222,32.8031809145129,52.9223378702962,88.2882882882883,52.2935779816514,78.3333333333333,37.5,85.6651376146789,81.651376146789,85.0158982511924,90.2606310013717,85.7142857142857,60,54.1044776119403,78.175519630485,73.202614379085,87.6543209876543,40.7677035076109,83.7209302325581,34.6456692913386,82.363315696649,46.9026548672566,89.4568690095847,46.8429752066116,90.6565656565657,84.5070422535211,83.4586466165414,38.9496717724289,88.8888888888889,85.0202429149798,79.7297297297297,74.6086956521739,93.801652892562,85.7142857142857,90.4950495049505,53.0864197530864,86.7803837953092,61.5279672578445,84.2741935483871,56,90.3030303030303,64.8610121168924,49.8781973203411,85.337726523888,81.0551558752998,49.5747266099635,65.0397275822929,56.3143838229683,57.0281124497992,82.4894514767932,88.4328358208955,82.3024054982818,83.8649155722326,67.5697211155378,65.0684931506849,55.8798283261803,75,79.9376299376299,87.8544423440454,76.9726247987117,89.6443514644351,68.1159420289855,59.375,82.4034334763949,57.6744186046512,49.3093922651934,65.0537634408602,96.3636363636364,100,72.1179624664879,52.9482551143201,49.7831743278404,54.1666666666667,74.8114630467572,37.703141928494,90.1673640167364,87.4384236453202,87.7934272300469,90.0343642611684,80.9815950920245,47.4295190713101,85.6474258970359,84.7222222222222,60.4719764011799,65.7193605683836],"share_2022":[92.1810699588477,89.8809523809524,80.4318488529015,50.9704641350211,34.9019607843137,68.4210526315789,77.9194382852919,77.5925925925926,41.6953035509737,73.5150925024343,74.2096505823627,0,100,73.8472126634549,85.0374064837905,60.2020202020202,81.5384615384615,69.9157641395908,91.6030534351145,55.2525252525253,93.854748603352,54.5189504373178,51.5901060070671,95.7219251336898,72.5507502206531,68.6274509803922,88.8615888615889,93.2346723044397,68.0043383947939,75.9701492537313,77.1428571428572,83.5743801652893,77.7777777777778,93.8461538461538,73.4117647058823,52.5373134328358,87.5789473684211,83.9495040577096,78.0405405405405,59.8290598290598,44.228855721393,19.4244604316547,57.4468085106383,96.2686567164179,85.5379188712522,90.6367041198502,92.570281124498,70.0251889168766,80.8743169398907,60.233918128655,100,69.5376820772641,94.2857142857143,42.2680412371134,78.5185185185185,56.3981042654028,43.8695652173913,76.8707482993197,94.6666666666667,49.7175141242938,86.5,72.9508196721311,93.0851063829787,89.8809523809524,45,48.8958990536278,82.1067821067821,95.8083832335329,88.3259911894273,82.9931972789116,89.6495517522412,79.1576673866091,77.9975278121137,79.6296296296296,61.7283950617284,84.1161400512382,73.6842105263158,76.7497034400949,67.5381263616558,59.1001011122346,58.0394922425952,58.3333333333333,77.7464788732394,81.8840579710145,64.5969498910675,68.8839285714286,90.8925318761384,97.1014492753623,94.392523364486,45.7364341085271,67.3123486682809,55.7046979865772,73.7623762376238,85.2459016393443,79.4561933534743,80.3493449781659,83.2214765100671,55.9160305343511,33.399209486166,57.4809160305343,84.6385542168675,53.6363636363636,76.6666666666667,50,87.3997709049255,83.4558823529412,86.4069952305246,91.0836762688614,88.8888888888889,64.7988505747126,54.8076923076923,82.4277456647399,76.3557483731019,90.1234567901235,41.010498687664,84.0909090909091,35.4788069073783,83.3040421792619,51.3274336283186,88.8535031847134,47.2977399279397,90.6565656565657,89.7435897435898,81.3432835820896,40.1026392961877,91.5032679738562,85.4545454545455,83.7837837837838,77.7777777777778,92.9752066115702,85.7142857142857,91.6831683168317,59.504132231405,87.8464818763326,66.3831235113984,87.5,57.0938999314599,92.7272727272727,64.7646219686163,53.6452004860267,86.0197368421053,82.7338129496403,50.9331727874774,67.5368898978434,56.2999619337647,59.2,87.4213836477987,89.7388059701492,83.8487972508591,86.6541353383459,70.8267090620032,65.0684931506849,57.8272027373824,80.7692307692308,81.7047817047817,89.2772791686349,80.1932367149759,91.4793518034501,70.2898550724638,56.9506726457399,86.6952789699571,59.9767981438515,51.7525773195876,66.3101604278075,100,100,71.9251336898396,53.3653846153846,50.4778453518679,54.1950113378685,77.8614457831325,40.9188034188034,91.2133891213389,89.3827160493827,85.9154929577465,92.2680412371134,78.75,48.3766233766234,88.2995319812793,80.5555555555556,59.4117647058824,70.8703374777975],"shift_parcels":[6,1,9,3,9,-6,72,19,0,7,52,0,0,25,13,12,-8,32,8,4,7,-4,4,8,46,12,24,5,14,0,7,14,1,6,8,4,19,20,20,5,-30,-3,11,11,37,9,4,25,15,10,1,60,8,3,7,44,69,3,3,3,5,-4,1,20,-3,11,36,-1,13,-3,49,18,37,-1,7,46,1,25,21,35,14,-25,29,-2,24,89,11,2,5,17,27,13,-4,54,10,3,-1,16,4,92,-13,2,-1,1,16,9,35,6,2,34,11,36,16,4,9,1,6,7,10,-1,27,0,10,-2,13,4,3,3,38,-2,0,6,15,5,147,16,21,12,-2,64,5,7,30,22,3,12,26,7,9,14,43,0,25,3,17,31,20,36,3,-6,10,21,39,9,2,0,0,4,7,5,63,35,5,7,-4,13,-6,12,17,-6,-3,29],"shift_share":[1.23456790123458,0.595238095238088,1.21457489878541,-0.265682497544972,3.65196078431372,-7.11086226203808,1.11751128881241,1.68897813476127,-0.532074639281568,0.109793189382259,8.32336295694466,0,0,1.72057811424639,3.03740648379052,2.65674857224153,-1.94171467299222,1.76136124453657,1.0178117048346,0.181531337717956,1.30353817504657,-1.00430537663571,0.694048659396884,2.13903743315508,3.87818384897172,3.65283169105206,1.82303266798755,1.0570824524313,1.37390361218525,0,-2.85714285714285,1.44628099173553,17.7777777777778,1.31868131868131,1.71365149833518,1.19402985074627,1.33333333333334,1.28162746968786,6.99676949676949,0.53810628382756,-1.46980166299284,-2.15827338129496,1.8517818676543,4.10447761194033,3.26278659611992,1.51850524555374,0.803212851405632,2.89497399905103,4.30755944670271,2.58685930512556,50,3.71650262260334,3.8095238095238,2.68470790378007,4.0824282929546,1.95629903974964,2.1659272404614,1.52828254589507,2.00000000000003,1.69491525423729,0.690317195325548,-3.27868852459017,0.531914893617028,3.96825396825398,-7.5,0.480182957303299,2.31636294510545,-0.598802395209589,1.33591401191904,-0.490965617016045,1.99674001629992,1.69287865421471,4.30025734064971,-1.21149186569747,3.23782902399255,3.85972979482798,5.26315789473684,1.48279952550415,4.71203940513403,1.62417612490565,0.866347366270112,-0.253516519463524,2.5110739768176,-1.02503293807642,2.34312056940451,3.82800015979547,1.84143698562748,4.24430641821945,1.5576323987539,4.39276485788113,6.24178905757528,1.08931337119257,-1.98019801980199,2.64152788188898,1.39265326270277,1.31004366812226,-0.671140939597308,3.35436070512913,0.596028571653086,4.55857816023811,-3.64973407142082,1.34278565471227,-1.66666666666666,12.5,1.73463329024665,1.80450620615218,1.39109697933227,0.823045267489718,3.17460317460318,4.79885057471265,0.703214695752017,4.2522260342549,3.15313399401698,2.46913580246914,0.242795180053186,0.369978858350947,0.83313761603975,0.940726482612831,4.42477876106194,-0.60336582487129,0.454764721328161,0,5.23654749006863,-2.1153630344518,1.1529675237588,2.61437908496731,0.434302539565692,4.05405405405406,3.16908212560386,-0.826446280991732,0,1.18811881188118,6.41771247831853,1.06609808102347,4.85515625355396,3.2258064516129,1.09389993145989,2.42424242424239,-0.0963901482761003,3.76700316568568,0.682010318217294,1.67865707434052,1.35844617751387,2.4971623155505,-0.0144218892035823,2.17188755020081,4.9319321710055,1.30597014925371,1.54639175257732,2.78921976611322,3.25698794646533,0,1.94737441120212,5.76923076923077,1.76715176715177,1.4228368245895,3.2206119162641,1.83500033901494,2.17391304347825,-2.42432735426009,4.29184549356222,2.30237953920034,2.44318505439427,1.25639698694728,3.63636363636364,0,-0.192828776648369,0.417129501064515,0.694671024027521,0.0283446712018147,3.04998273637537,3.21566149030938,1.04602510460252,1.94429240406252,-1.87793427230046,2.233676975945,-2.23159509202453,0.94710430531326,2.65210608424339,-4.16666666666666,-1.06021169529758,5.15097690941387]},"columns":[{"accessor":"city_nhood","name":"neighborhood","type":"character","width":180},{"accessor":"parcels_2018","name":"2018","type":"numeric","format":{"cell":{"separators":true},"aggregated":{"separators":true}},"width":75},{"accessor":"parcels_2022","name":"2022","type":"numeric","format":{"cell":{"separators":true},"aggregated":{"separators":true}},"width":75},{"accessor":"share_2018","name":"2018","type":"numeric","format":{"cell":{"suffix":"%","digits":1},"aggregated":{"suffix":"%","digits":1}},"width":75},{"accessor":"share_2022","name":"2022","type":"numeric","format":{"cell":{"suffix":"%","digits":1},"aggregated":{"suffix":"%","digits":1}},"width":75},{"accessor":"shift_parcels","name":"parcels","type":"numeric","format":{"cell":{"separators":true},"aggregated":{"separators":true}},"width":75},{"accessor":"shift_share","name":"share","type":"numeric","format":{"cell":{"suffix":"%","digits":1},"aggregated":{"suffix":"%","digits":1}},"width":75}],"columnGroups":[{"name":"parcels","columns":["parcels_2018","parcels_2022"]},{"name":"share","columns":["share_2018","share_2022"]},{"name":"shift '18 to '22","columns":["shift_parcels","shift_share"]}],"searchable":true,"defaultPageSize":10,"paginationType":"numbers","showPageInfo":true,"minRows":1,"striped":true,"width":"630px","dataKey":"a3ab355581ebfd1ab6678680803c83a7","key":"a3ab355581ebfd1ab6678680803c83a7"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</section>
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./intro.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./InvestorActivity.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Investor Activity</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>

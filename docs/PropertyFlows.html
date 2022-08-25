@@ -1,0 +1,1779 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-0.9.612">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Milwaukee Housing Trends since 2018 - 5&nbsp; Property Flows</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./summary.html" rel="next">
+<link href="./Competition.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<script src="site_libs/d3-4.5.0/d3.min.js"></script>
+<script src="site_libs/sankey-1/sankey.js"></script>
+<script src="site_libs/sankeyNetwork-binding-0.4/sankeyNetwork.js"></script>
+
+
+</head>
+
+<body class="nav-sidebar floating slimcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Property Flows</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Milwaukee Housing Trends since 2018</a> 
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./OwnerOccupancy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Owner occupancy rates</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./InvestorActivity.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Investor Activity</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Competition.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Consequences of competition</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./PropertyFlows.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Property Flows</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Summary</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#arms-length" id="toc-arms-length" class="nav-link active" data-scroll-target="#arms-length"> <span class="header-section-number">5.1</span> arm’s length</a></li>
+  <li><a href="#all" id="toc-all" class="nav-link" data-scroll-target="#all"> <span class="header-section-number">5.2</span> all</a></li>
+  <li><a href="#ultimate" id="toc-ultimate" class="nav-link" data-scroll-target="#ultimate"> <span class="header-section-number">5.3</span> ultimate</a></li>
+  <li><a href="#package-sales" id="toc-package-sales" class="nav-link" data-scroll-target="#package-sales"> <span class="header-section-number">5.4</span> Package sales</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Property Flows</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<p>Property sales as a whole are up. More homes are going to out-of-state landlords and owner occupiers alike. Compared to a few years ago, many fewer properties are owned by local and suburban landlords. Who, then, is selling to whom?</p>
+<div class="page-columns page-full"><p>To answer this question, I collected all the Real Estate Transfer Returns (RETR) filed with the Wisconsin Department of Revenue and matched them with the City Assessor’s records in the Master Property (MPROP) file.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p><div class="no-row-height column-margin column-container"><li id="fn1" role="doc-endnote"><p><sup>1</sup>&nbsp;I successfully matched over 98% of RETR records with an MPROP record. RETR data is self-reported and inevitable contains some errors.</p></li></div></div>
+<div class="page-columns page-full"><p>By combining RETR and MPROP records, I ascertained the ownership status of each residential property before and after the transaction.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> The Sankey (or “alluvial flow”) diagrams below reveal the size of those flows. Hover over a flow to reveal a tooltip containing the total size.</p><div class="no-row-height column-margin column-container"><li id="fn2" role="doc-endnote"><p><sup>2</sup>&nbsp;Archived MPROP records contain property records as of December in the given year. I arranged each property’s MPROP and RETR records by date. If an MPROP record preceded or succeeded a RETR record, its ownership status determined the prior or subsequent ownership value for the transaction. If a RETR record was preceded or followed by another RETR record, or if it was the first or last record for the property, the appropriate RETR values for grantor/grantee address or the self-reported grantee primary residence were used.</p></li></div></div>
+<p>Net transaction flows to and from a given ownership category inevitably vary from the overall changes of ownership in each category for several reasons. (1) The flow file contains slightly more recent data than the MRPOP dataset. (2) Some properties are sold multiple times. (3) Most importantly, properties can change ownership status without being sold or otherwise conveyed. For instance, the net transaction flow <em>from</em> landlords <em>to</em> owner occupiers is larger than the total citywide increase in owner-occupied properties. This is mainly due to the prevalence of non-sale conversions of owner-occupied properties into something else. It is far more common for an owner-occupier to move out of their property (and presumably turn it into a rental) than it is for a landlord to move into one of their rental properties (thereby converting its status to owner occupation).</p>
+<section id="arms-length" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="arms-length"><span class="header-section-number">5.1</span> arm’s length</h2>
+<p>The graph below shows the outcome of 30,044 arm’s length sales of single family homes, condos, duplexes, and triplexes in Milwaukee from January 2019 through June 2022. A small number of sales involving owners of unknown location or properties owned by the City of Milwaukee have been removed.</p>
+<p>The flows of arm’s length transactions reveal how owner-occupiers increased their share of houses. The lion’s share, 84%, of homes sold <em>by</em> owner occupiers also went <em>to</em> owner occupiers, but these transactions only made up 61% of owner occupier acquisitions. Owner-occupiers also purchased 43% of properties sold by Milwaukee-based landlords, 51% from suburban landlords, 50% from landlords elsewhere in Wisconsin, and 37% of properties sold by landlords based outside the state.</p>
+<p>When owner-occupiers did sell to a landlord, it was usually one from the Milwaukee metro. City-based landlords bought 6% of owner-occupier sales, suburban landlords bought 5%, and out-of-state landlords just 3%.</p>
+<p>When out-of-state landlords bought properties in arm’s length sales, they usually did so from other landlords. Sales from other out-of-state landlords account for 28%, Milwaukee-based landlords 30%, suburban landlords 23%, and owner-occupiers 12%.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-7b059f69fde5cf3bbba2" style="width:100%;height:325px;" class="sankeyNetwork html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7b059f69fde5cf3bbba2">{"x":{"links":{"source":[0,0,0,0,0,0,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3,4,4,4,4,4,5,5,5,5,5],"target":[6,7,8,9,10,11,7,8,9,10,11,6,7,8,9,10,11,6,7,8,9,10,11,7,8,9,10,11,7,8,9,10,11],"value":[5,171,91,79,10,104,1656,1134,2774,145,776,2,382,1041,1052,76,300,1,868,469,11455,141,715,134,139,470,86,115,765,878,2866,124,1020]},"nodes":{"name":["financial institution","Milwaukee-based landlord","outside WI landlord","owner occupied","rest of Wisconsin landlord","suburbs landlord","financial.institution","Milwaukee-based.landlord","outside.WI.landlord","owner.occupied","rest.of.Wisconsin.landlord","suburbs.landlord"],"group":["financial institution","Milwaukee-based landlord","outside WI landlord","owner occupied","rest of Wisconsin landlord","suburbs landlord","financial.institution","Milwaukee-based.landlord","outside.WI.landlord","owner.occupied","rest.of.Wisconsin.landlord","suburbs.landlord"]},"options":{"NodeID":"name","NodeGroup":"name","LinkGroup":null,"colourScale":"d3.scaleOrdinal() .range([\"#FDE725FF\",\"#B4DE2CFF\",\"#6DCD59FF\",\"#35B779FF\",\"#1F9E89FF\",\"#26828EFF\",\"#31688EFF\"])","fontSize":16,"fontFamily":null,"nodeWidth":40,"nodePadding":20,"units":"","margin":{"top":-150,"right":-150,"bottom":null,"left":-150},"iterations":32,"sinksRight":false}},"evals":[],"jsHooks":[]}</script>
+<p>arm’s length transactions</p>
+</div>
+</div>
+</section>
+<section id="all" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="all"><span class="header-section-number">5.2</span> all</h2>
+<p>The following graph shows all 48,737 property conveyances including non-arms length transactions. Sales involving owners of unknown location have been removed.</p>
+<p>Landlords are more active in non-arm’s length conveyances. But even when including these, the net positive flows from landlords to owner-occupiers are still apparent.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-6fae8fe521d92734e990" style="width:100%;height:390px;" class="sankeyNetwork html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6fae8fe521d92734e990">{"x":{"links":{"source":[0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3,4,4,4,4,4,4,5,5,5,5,5,5],"target":[6,7,8,9,10,11,6,7,8,9,10,11,6,7,8,9,10,11,6,7,8,9,10,11,6,7,8,9,10,11,6,7,8,9,10,11],"value":[35,288,205,177,17,168,126,3792,1323,3546,211,1131,46,551,1849,1318,95,380,420,2010,845,19023,320,1521,10,178,167,576,282,152,42,989,993,3331,158,2462]},"nodes":{"name":["financial institution","Milwaukee-based landlord","outside WI landlord","owner occupied","rest of Wisconsin landlord","suburbs landlord","financial.institution","Milwaukee-based.landlord","outside.WI.landlord","owner.occupied","rest.of.Wisconsin.landlord","suburbs.landlord"],"group":["financial institution","Milwaukee-based landlord","outside WI landlord","owner occupied","rest of Wisconsin landlord","suburbs landlord","financial.institution","Milwaukee-based.landlord","outside.WI.landlord","owner.occupied","rest.of.Wisconsin.landlord","suburbs.landlord"]},"options":{"NodeID":"name","NodeGroup":"name","LinkGroup":null,"colourScale":"d3.scaleOrdinal() .range([\"#FDE725FF\",\"#B4DE2CFF\",\"#6DCD59FF\",\"#35B779FF\",\"#1F9E89FF\",\"#26828EFF\",\"#31688EFF\"])","fontSize":16,"fontFamily":null,"nodeWidth":40,"nodePadding":20,"units":"","margin":{"top":-150,"right":-150,"bottom":null,"left":-150},"iterations":32,"sinksRight":false}},"evals":[],"jsHooks":[]}</script>
+<p>all transactions</p>
+</div>
+</div>
+</section>
+<section id="ultimate" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="ultimate"><span class="header-section-number">5.3</span> ultimate</h2>
+<p>Some properties went through a sequence of transactions during this period of time. For example, a property could’ve been foreclosed on by a bank, then sold to a flipper, and finally sold to a long-term owner. The table below shows, for all properties which experienced a change in ownership, the first and final ownership status of the property during the study period–January 2018 through June 2022. As such, it might be the most useful for understanding recent property flows in the city.</p>
+<p>Of all the properties first sold by an owner-occupier since January 2018, 83% were (at least eventually) sold to an owner-occupier by June 2022. 7% were sold to a Milwaukee landlord, 5% to a suburbs landlord, and 3% to a landlord outside Wisconsin.</p>
+<p>Of all the homes ultimately <strong><em>purchased</em></strong> by an owner occupier, 70% were originally sold by an owner occupier, 12% by a Milwaukee landlord, 11% by a suburban landlord, and 4% by an out-of-state landlord.</p>
+<p>Of all the homes ultimately purchased by an out-of-state landlord, 30% were originally sold by a Milwaukee landlord, 24% by another outside Wisconsin landlord, 23% by a suburban landlord, and 18% by an owner occupier.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-109fce0643434dd6c142" style="width:100%;height:390px;" class="sankeyNetwork html-widget"></div>
+<script type="application/json" data-for="htmlwidget-109fce0643434dd6c142">{"x":{"links":{"source":[0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,2,2,2,3,3,3,3,3,3,3,4,4,4,4,4,4,4,5,5,5,5,5,5,6,6,6,6,6,6,6],"target":[7,8,9,10,11,12,13,8,9,10,11,12,7,13,8,9,10,11,12,7,13,8,9,10,11,12,7,13,8,9,10,11,12,7,8,9,10,11,12,7,13,8,9,10,11,12],"value":[1,124,27,85,23,23,6,55,36,160,6,33,126,18,2365,1118,2788,177,812,21,7,335,882,1038,72,207,119,49,1444,679,16721,209,912,2,114,142,500,136,94,21,5,700,864,2516,116,1352]},"nodes":{"name":["City of Milwaukee","financial institution","Milwaukee-based landlord","outside WI landlord","owner occupied","rest of Wisconsin landlord","suburbs landlord","City.of.Milwaukee","Milwaukee-based.landlord","outside.WI.landlord","owner.occupied","rest.of.Wisconsin.landlord","suburbs.landlord","financial.institution"],"group":["City of Milwaukee","financial institution","Milwaukee-based landlord","outside WI landlord","owner occupied","rest of Wisconsin landlord","suburbs landlord","City.of.Milwaukee","Milwaukee-based.landlord","outside.WI.landlord","owner.occupied","rest.of.Wisconsin.landlord","suburbs.landlord","financial.institution"]},"options":{"NodeID":"name","NodeGroup":"name","LinkGroup":null,"colourScale":"d3.scaleOrdinal() .range([\"#FDE725FF\",\"#B4DE2CFF\",\"#6DCD59FF\",\"#35B779FF\",\"#1F9E89FF\",\"#26828EFF\",\"#31688EFF\"])","fontSize":16,"fontFamily":null,"nodeWidth":40,"nodePadding":20,"units":"","margin":{"top":-150,"right":-150,"bottom":null,"left":-150},"iterations":32,"sinksRight":false}},"evals":[],"jsHooks":[]}</script>
+<p>ultimate transaction flow</p>
+</div>
+</div>
+</section>
+<section id="package-sales" class="level2 page-columns page-full" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="package-sales"><span class="header-section-number">5.4</span> Package sales</h2>
+<div class="page-columns page-full"><p>Sales of more than one property in a single transaction have grown more common in each year since our records begin in 2017.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> This kind of property data is messy, but by our count, there were 103 multi-property sales which included at least 1 residential property in 2017. This grew by 76% to 181 in 2021. The number of such sales has already reached 121 through just the first half of 2022.</p><div class="no-row-height column-margin column-container"><li id="fn3" role="doc-endnote"><p><sup>3</sup>&nbsp;Identifying meaningful bulk sales from the list of all property conveyance records poses challenges. Large landlords often transfer properties between their myriad LLCs, but simply limiting the analysis to self-reported “arm’s length” transactions misses some genuine sales. I restrict this analysis to conveyances meeting the following criteria: (1) there is no stated relationship between the grantor and grantee, (2) that grantor’s address is different than the grantee’s, and (3) the conveyance is <em>either</em> arm’s length <em>or</em> not arm’s length but still subject to a transfer fee.</p></li></div></div>
+<p>The number of residential properties sold in these transactions has likewise increased, from 343 in 2017 to 630 in 2021, and 505 through June 2022. If this pattern repeats itself in the latter half of the year, Milwaukee could see over 1,000 of its houses sold in a multi-property deal.</p>
+<p>&nbsp;</p>
+<div class="cell">
+<div class="cell-output-display">
+
+<div id="ojvplksalk" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#ojvplksalk .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#ojvplksalk .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ojvplksalk .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#ojvplksalk .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#ojvplksalk .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ojvplksalk .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ojvplksalk .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#ojvplksalk .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#ojvplksalk .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#ojvplksalk .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#ojvplksalk .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#ojvplksalk .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#ojvplksalk .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#ojvplksalk .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#ojvplksalk .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#ojvplksalk .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#ojvplksalk .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ojvplksalk .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#ojvplksalk .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#ojvplksalk .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ojvplksalk .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#ojvplksalk .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#ojvplksalk .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ojvplksalk .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ojvplksalk .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#ojvplksalk .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#ojvplksalk .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ojvplksalk .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ojvplksalk .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ojvplksalk .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ojvplksalk .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ojvplksalk .gt_left {
+  text-align: left;
+}
+
+#ojvplksalk .gt_center {
+  text-align: center;
+}
+
+#ojvplksalk .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#ojvplksalk .gt_font_normal {
+  font-weight: normal;
+}
+
+#ojvplksalk .gt_font_bold {
+  font-weight: bold;
+}
+
+#ojvplksalk .gt_font_italic {
+  font-style: italic;
+}
+
+#ojvplksalk .gt_super {
+  font-size: 65%;
+}
+
+#ojvplksalk .gt_two_val_uncert {
+  display: inline-block;
+  line-height: 1em;
+  text-align: right;
+  font-size: 60%;
+  vertical-align: -0.25em;
+  margin-left: 0.1em;
+}
+
+#ojvplksalk .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#ojvplksalk .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#ojvplksalk .gt_slash_mark {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  vertical-align: 0.15em;
+}
+
+#ojvplksalk .gt_fraction_numerator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: 0.45em;
+}
+
+#ojvplksalk .gt_fraction_denominator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: -0.05em;
+}
+</style>
+<table class="gt_table">
+  <thead class="gt_header">
+    <tr>
+      <th colspan="3" class="gt_heading gt_title gt_font_normal" style="">Residential properties sold in multi-property sales</th>
+    </tr>
+    <tr>
+      <th colspan="3" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style="">in the City of Milwaukee</th>
+    </tr>
+  </thead>
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1"></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">sales</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">parcels</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_right gt_stub">2017</td>
+<td class="gt_row gt_right">103</td>
+<td class="gt_row gt_right">343</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2018</td>
+<td class="gt_row gt_right">121</td>
+<td class="gt_row gt_right">495</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2019</td>
+<td class="gt_row gt_right">125</td>
+<td class="gt_row gt_right">481</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2020</td>
+<td class="gt_row gt_right">148</td>
+<td class="gt_row gt_right">437</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2021</td>
+<td class="gt_row gt_right">181</td>
+<td class="gt_row gt_right">630</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2022<sup class="gt_footnote_marks">1</sup></td>
+<td class="gt_row gt_right">121</td>
+<td class="gt_row gt_right">505</td></tr>
+  </tbody>
+  
+  <tfoot class="gt_footnotes">
+    <tr>
+      <td class="gt_footnote" colspan="3"><sup class="gt_footnote_marks">1</sup> Includes conveyances reported through June 2022.</td>
+    </tr>
+  </tfoot>
+</table>
+</div>
+</div>
+</div>
+<p>&nbsp;</p>
+<p>Houses sold in package deals tend to be quite affordable on an individual basis. The properties sold this way since 2021 have a median 2022 assessed value of $80,700. But would-be homebuyers, particular in this price range, can’t compete with the kinds of buyers who can pay cash for multiple properties at once. In all likelihood, many of these properties aren’t even listed on MLS.</p>
+<p>Bulk purchases have been particularly popular with Milwaukee’s three private equity backed companies. Through June 2022, we identified 5 package purchases by SFR3, in which they acquired 58 houses. Highgrove Holdings used 11 bulk sales to buy 186 properties, and VineBrook bought 184 properties in 28 transactions.</p>
+<div class="cell">
+<div class="cell-output-display">
+
+<div id="ppdprgqzmr" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#ppdprgqzmr .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#ppdprgqzmr .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ppdprgqzmr .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#ppdprgqzmr .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#ppdprgqzmr .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ppdprgqzmr .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ppdprgqzmr .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#ppdprgqzmr .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#ppdprgqzmr .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#ppdprgqzmr .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#ppdprgqzmr .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#ppdprgqzmr .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#ppdprgqzmr .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#ppdprgqzmr .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#ppdprgqzmr .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#ppdprgqzmr .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#ppdprgqzmr .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ppdprgqzmr .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#ppdprgqzmr .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#ppdprgqzmr .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ppdprgqzmr .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#ppdprgqzmr .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#ppdprgqzmr .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ppdprgqzmr .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ppdprgqzmr .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#ppdprgqzmr .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#ppdprgqzmr .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ppdprgqzmr .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ppdprgqzmr .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ppdprgqzmr .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ppdprgqzmr .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ppdprgqzmr .gt_left {
+  text-align: left;
+}
+
+#ppdprgqzmr .gt_center {
+  text-align: center;
+}
+
+#ppdprgqzmr .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#ppdprgqzmr .gt_font_normal {
+  font-weight: normal;
+}
+
+#ppdprgqzmr .gt_font_bold {
+  font-weight: bold;
+}
+
+#ppdprgqzmr .gt_font_italic {
+  font-style: italic;
+}
+
+#ppdprgqzmr .gt_super {
+  font-size: 65%;
+}
+
+#ppdprgqzmr .gt_two_val_uncert {
+  display: inline-block;
+  line-height: 1em;
+  text-align: right;
+  font-size: 60%;
+  vertical-align: -0.25em;
+  margin-left: 0.1em;
+}
+
+#ppdprgqzmr .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#ppdprgqzmr .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#ppdprgqzmr .gt_slash_mark {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  vertical-align: 0.15em;
+}
+
+#ppdprgqzmr .gt_fraction_numerator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: 0.45em;
+}
+
+#ppdprgqzmr .gt_fraction_denominator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: -0.05em;
+}
+</style>
+<table class="gt_table">
+  <thead class="gt_header">
+    <tr>
+      <th colspan="5" class="gt_heading gt_title gt_font_normal gt_bottom_border" style="">Multi-property purchases</th>
+    </tr>
+    
+  </thead>
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1"></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">package sales</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">properties</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">total paid</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">per property</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_right gt_stub">Highgrove Holdings</td>
+<td class="gt_row gt_right">11</td>
+<td class="gt_row gt_right">186</td>
+<td class="gt_row gt_right">$10,307,651</td>
+<td class="gt_row gt_right">$55,417</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">SFR3</td>
+<td class="gt_row gt_right">5</td>
+<td class="gt_row gt_right">58</td>
+<td class="gt_row gt_right">$4,830,900</td>
+<td class="gt_row gt_right">$83,291</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">VineBrook Homes</td>
+<td class="gt_row gt_right">28</td>
+<td class="gt_row gt_right">184</td>
+<td class="gt_row gt_right">$19,954,968</td>
+<td class="gt_row gt_right">$108,451</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+<p>Highgrove Holdings was the buyer in 4 of the 5 largest deals. Each of those deals involved buying out the portfolio of another out-of-state landlord who was leaving the market, and all four were conducted between June 30, 2021 and January 21, 2022. Three of the transactions were with companies owned by Sergio Pejoves, in which it spent $6,609,336 buying 100 properties. The other transaction was $1,326,815 for 31 properties owned by Alan and Liqun Schapiro. Both Pejoves and the Schapiros were featured in an April 2021 <a href="https://www.jsonline.com/in-depth/news/2021/04/15/milwaukee-rentals-overtaken-corporate-landlords-raking-profits/6989234002/"><em>MJS article</em></a> about out-of-state landlords.</p>
+<p>Many bulk purchases aren’t large. VineBrook Homes has recorded 20 multiple property deals in 2022 through June, with an average size of 6.4 parcels. In total, the company spent $14,547,968 on 128 houses. Per property values ranged from $80,000 to $148,000 with a median of $109,000.</p>
+<div class="cell">
+<div class="cell-output-display">
+
+<div id="ecjlqwgwpm" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#ecjlqwgwpm .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#ecjlqwgwpm .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ecjlqwgwpm .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#ecjlqwgwpm .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#ecjlqwgwpm .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ecjlqwgwpm .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#ecjlqwgwpm .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#ecjlqwgwpm .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#ecjlqwgwpm .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#ecjlqwgwpm .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#ecjlqwgwpm .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#ecjlqwgwpm .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#ecjlqwgwpm .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#ecjlqwgwpm .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#ecjlqwgwpm .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#ecjlqwgwpm .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#ecjlqwgwpm .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ecjlqwgwpm .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#ecjlqwgwpm .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#ecjlqwgwpm .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ecjlqwgwpm .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#ecjlqwgwpm .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#ecjlqwgwpm .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ecjlqwgwpm .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ecjlqwgwpm .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#ecjlqwgwpm .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#ecjlqwgwpm .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#ecjlqwgwpm .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ecjlqwgwpm .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ecjlqwgwpm .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#ecjlqwgwpm .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#ecjlqwgwpm .gt_left {
+  text-align: left;
+}
+
+#ecjlqwgwpm .gt_center {
+  text-align: center;
+}
+
+#ecjlqwgwpm .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#ecjlqwgwpm .gt_font_normal {
+  font-weight: normal;
+}
+
+#ecjlqwgwpm .gt_font_bold {
+  font-weight: bold;
+}
+
+#ecjlqwgwpm .gt_font_italic {
+  font-style: italic;
+}
+
+#ecjlqwgwpm .gt_super {
+  font-size: 65%;
+}
+
+#ecjlqwgwpm .gt_two_val_uncert {
+  display: inline-block;
+  line-height: 1em;
+  text-align: right;
+  font-size: 60%;
+  vertical-align: -0.25em;
+  margin-left: 0.1em;
+}
+
+#ecjlqwgwpm .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#ecjlqwgwpm .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#ecjlqwgwpm .gt_slash_mark {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  vertical-align: 0.15em;
+}
+
+#ecjlqwgwpm .gt_fraction_numerator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: 0.45em;
+}
+
+#ecjlqwgwpm .gt_fraction_denominator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: -0.05em;
+}
+</style>
+<table class="gt_table">
+  <thead class="gt_header">
+    <tr>
+      <th colspan="5" class="gt_heading gt_title gt_font_normal gt_bottom_border" style="">Multi-property purchase by VineBrook Homes during 2022</th>
+    </tr>
+    
+  </thead>
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1"></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">grantor</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">parcels</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">total paid</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">per property</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_right gt_stub">2022-01-20</td>
+<td class="gt_row gt_left">Homepointe Rentals LLC</td>
+<td class="gt_row gt_right">3</td>
+<td class="gt_row gt_right">$240,000</td>
+<td class="gt_row gt_right">$80,000</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2022-01-06</td>
+<td class="gt_row gt_left">Joseph  Passalacqua</td>
+<td class="gt_row gt_right">6</td>
+<td class="gt_row gt_right">$630,000</td>
+<td class="gt_row gt_right">$105,000</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2022-01-06</td>
+<td class="gt_row gt_left">Joseph  Passalacqua; Hope  Albers</td>
+<td class="gt_row gt_right">2</td>
+<td class="gt_row gt_right">$205,000</td>
+<td class="gt_row gt_right">$102,500</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2022-01-24</td>
+<td class="gt_row gt_left">Sac3 LLC</td>
+<td class="gt_row gt_right">9</td>
+<td class="gt_row gt_right">$985,970</td>
+<td class="gt_row gt_right">$109,552</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2022-01-24</td>
+<td class="gt_row gt_left">Sac4 LLC</td>
+<td class="gt_row gt_right">5</td>
+<td class="gt_row gt_right">$550,625</td>
+<td class="gt_row gt_right">$110,125</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2022-01-24</td>
+<td class="gt_row gt_left">Sac5 LLC</td>
+<td class="gt_row gt_right">7</td>
+<td class="gt_row gt_right">$757,770</td>
+<td class="gt_row gt_right">$108,253</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2022-01-24</td>
+<td class="gt_row gt_left">Sac6 LLC</td>
+<td class="gt_row gt_right">2</td>
+<td class="gt_row gt_right">$211,024</td>
+<td class="gt_row gt_right">$105,512</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2022-01-24</td>
+<td class="gt_row gt_left">Sac7 LLC</td>
+<td class="gt_row gt_right">20</td>
+<td class="gt_row gt_right">$2,431,770</td>
+<td class="gt_row gt_right">$121,588</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2022-01-24</td>
+<td class="gt_row gt_left">Sac20 LLC</td>
+<td class="gt_row gt_right">2</td>
+<td class="gt_row gt_right">$193,809</td>
+<td class="gt_row gt_right">$96,904</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2022-01-25</td>
+<td class="gt_row gt_left">Single R Holdings Company LLC</td>
+<td class="gt_row gt_right">5</td>
+<td class="gt_row gt_right">$467,356</td>
+<td class="gt_row gt_right">$93,471</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2022-01-25</td>
+<td class="gt_row gt_left">Homes For Living Mke, LLC</td>
+<td class="gt_row gt_right">4</td>
+<td class="gt_row gt_right">$382,644</td>
+<td class="gt_row gt_right">$95,661</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2022-02-15</td>
+<td class="gt_row gt_left">Mary E Zierke</td>
+<td class="gt_row gt_right">3</td>
+<td class="gt_row gt_right">$360,000</td>
+<td class="gt_row gt_right">$120,000</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2022-02-15</td>
+<td class="gt_row gt_left">Steven M Cimbalnik</td>
+<td class="gt_row gt_right">2</td>
+<td class="gt_row gt_right">$240,000</td>
+<td class="gt_row gt_right">$120,000</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2022-02-24</td>
+<td class="gt_row gt_left">Mark A Cimbalink</td>
+<td class="gt_row gt_right">14</td>
+<td class="gt_row gt_right">$1,701,241</td>
+<td class="gt_row gt_right">$121,517</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2022-02-24</td>
+<td class="gt_row gt_left">Simba Homes, LLC</td>
+<td class="gt_row gt_right">11</td>
+<td class="gt_row gt_right">$1,236,259</td>
+<td class="gt_row gt_right">$112,387</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2022-03-07</td>
+<td class="gt_row gt_left">Robert E Gariepy Jr</td>
+<td class="gt_row gt_right">5</td>
+<td class="gt_row gt_right">$610,000</td>
+<td class="gt_row gt_right">$122,000</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2022-03-08</td>
+<td class="gt_row gt_left">Metro City Apartments, LLC</td>
+<td class="gt_row gt_right">5</td>
+<td class="gt_row gt_right">$740,000</td>
+<td class="gt_row gt_right">$148,000</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2022-03-14</td>
+<td class="gt_row gt_left">Andrew J Nagel Aka Andrew  Nagel</td>
+<td class="gt_row gt_right">4</td>
+<td class="gt_row gt_right">$375,000</td>
+<td class="gt_row gt_right">$93,750</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2022-03-16</td>
+<td class="gt_row gt_left">Cornerstone Properties LLC</td>
+<td class="gt_row gt_right">13</td>
+<td class="gt_row gt_right">$1,730,000</td>
+<td class="gt_row gt_right">$133,077</td></tr>
+    <tr><td class="gt_row gt_right gt_stub">2022-04-07</td>
+<td class="gt_row gt_left">Brittain Brothers LLC</td>
+<td class="gt_row gt_right">6</td>
+<td class="gt_row gt_right">$499,500</td>
+<td class="gt_row gt_right">$83,250</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+
+
+</section>
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./Competition.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Consequences of competition</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./summary.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
