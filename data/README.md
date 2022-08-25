@@ -1,0 +1,3 @@
+This directory contains property data for the City of Milwaukee.
+
+For MPROP derived files, each year prior to the current one represent year-end data. The current year's data was updated shortly before the time indicated on the file's timestamp. These files only include information about *houses* in the City of Milwaukee. Houses includes single family homes, condos, duplexes, and triplexes. It *excludes* apartment buildings. Any column with the name `median_value_adj` includes inflation-adjusted dollar value, using the **June 2022** CPI.
