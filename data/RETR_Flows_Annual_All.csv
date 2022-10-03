@@ -13,14 +13,14 @@ year,previous_ownership,subsequent_ownership,parcels
 2019,Milwaukee-based landlord,suburbs landlord,309
 2019,outside WI landlord,financial institution,27
 2019,outside WI landlord,Milwaukee-based landlord,192
-2019,outside WI landlord,outside WI landlord,416
+2019,outside WI landlord,outside WI landlord,417
 2019,outside WI landlord,owner occupied,334
 2019,outside WI landlord,rest of Wisconsin landlord,35
 2019,outside WI landlord,suburbs landlord,139
 2019,owner occupied,financial institution,239
 2019,owner occupied,Milwaukee-based landlord,609
 2019,owner occupied,outside WI landlord,206
-2019,owner occupied,owner occupied,4832
+2019,owner occupied,owner occupied,4834
 2019,owner occupied,rest of Wisconsin landlord,92
 2019,owner occupied,suburbs landlord,420
 2019,rest of Wisconsin landlord,financial institution,5
@@ -42,104 +42,104 @@ year,previous_ownership,subsequent_ownership,parcels
 2020,financial institution,rest of Wisconsin landlord,6
 2020,financial institution,suburbs landlord,42
 2020,Milwaukee-based landlord,financial institution,18
-2020,Milwaukee-based landlord,Milwaukee-based landlord,1099
+2020,Milwaukee-based landlord,Milwaukee-based landlord,1098
 2020,Milwaukee-based landlord,outside WI landlord,306
-2020,Milwaukee-based landlord,owner occupied,1001
+2020,Milwaukee-based landlord,owner occupied,1003
 2020,Milwaukee-based landlord,rest of Wisconsin landlord,64
-2020,Milwaukee-based landlord,suburbs landlord,290
+2020,Milwaukee-based landlord,suburbs landlord,289
 2020,outside WI landlord,financial institution,8
 2020,outside WI landlord,Milwaukee-based landlord,142
-2020,outside WI landlord,outside WI landlord,400
-2020,outside WI landlord,owner occupied,333
+2020,outside WI landlord,outside WI landlord,399
+2020,outside WI landlord,owner occupied,334
 2020,outside WI landlord,rest of Wisconsin landlord,26
 2020,outside WI landlord,suburbs landlord,80
 2020,owner occupied,financial institution,88
-2020,owner occupied,Milwaukee-based landlord,519
-2020,owner occupied,outside WI landlord,218
-2020,owner occupied,owner occupied,5289
+2020,owner occupied,Milwaukee-based landlord,521
+2020,owner occupied,outside WI landlord,219
+2020,owner occupied,owner occupied,5287
 2020,owner occupied,rest of Wisconsin landlord,94
 2020,owner occupied,suburbs landlord,423
 2020,rest of Wisconsin landlord,financial institution,2
 2020,rest of Wisconsin landlord,Milwaukee-based landlord,48
 2020,rest of Wisconsin landlord,outside WI landlord,38
 2020,rest of Wisconsin landlord,owner occupied,143
-2020,rest of Wisconsin landlord,rest of Wisconsin landlord,69
+2020,rest of Wisconsin landlord,rest of Wisconsin landlord,70
 2020,rest of Wisconsin landlord,suburbs landlord,33
 2020,suburbs landlord,financial institution,10
 2020,suburbs landlord,Milwaukee-based landlord,259
 2020,suburbs landlord,outside WI landlord,216
-2020,suburbs landlord,owner occupied,900
+2020,suburbs landlord,owner occupied,902
 2020,suburbs landlord,rest of Wisconsin landlord,36
-2020,suburbs landlord,suburbs landlord,599
+2020,suburbs landlord,suburbs landlord,597
 2021,financial institution,financial institution,6
-2021,financial institution,Milwaukee-based landlord,39
+2021,financial institution,Milwaukee-based landlord,37
 2021,financial institution,outside WI landlord,28
-2021,financial institution,owner occupied,31
+2021,financial institution,owner occupied,33
 2021,financial institution,rest of Wisconsin landlord,1
 2021,financial institution,suburbs landlord,15
 2021,Milwaukee-based landlord,financial institution,29
 2021,Milwaukee-based landlord,Milwaukee-based landlord,1184
-2021,Milwaukee-based landlord,outside WI landlord,505
-2021,Milwaukee-based landlord,owner occupied,1185
+2021,Milwaukee-based landlord,outside WI landlord,503
+2021,Milwaukee-based landlord,owner occupied,1187
 2021,Milwaukee-based landlord,rest of Wisconsin landlord,48
 2021,Milwaukee-based landlord,suburbs landlord,373
-2021,outside WI landlord,financial institution,10
+2021,outside WI landlord,financial institution,9
 2021,outside WI landlord,Milwaukee-based landlord,158
 2021,outside WI landlord,outside WI landlord,668
-2021,outside WI landlord,owner occupied,445
+2021,outside WI landlord,owner occupied,447
 2021,outside WI landlord,rest of Wisconsin landlord,23
-2021,outside WI landlord,suburbs landlord,101
-2021,owner occupied,financial institution,77
-2021,owner occupied,Milwaukee-based landlord,627
-2021,owner occupied,outside WI landlord,300
-2021,owner occupied,owner occupied,6143
+2021,outside WI landlord,suburbs landlord,100
+2021,owner occupied,financial institution,72
+2021,owner occupied,Milwaukee-based landlord,631
+2021,owner occupied,outside WI landlord,299
+2021,owner occupied,owner occupied,6154
 2021,owner occupied,rest of Wisconsin landlord,98
-2021,owner occupied,suburbs landlord,511
+2021,owner occupied,suburbs landlord,509
 2021,rest of Wisconsin landlord,financial institution,2
 2021,rest of Wisconsin landlord,Milwaukee-based landlord,53
 2021,rest of Wisconsin landlord,outside WI landlord,55
-2021,rest of Wisconsin landlord,owner occupied,184
-2021,rest of Wisconsin landlord,rest of Wisconsin landlord,84
-2021,rest of Wisconsin landlord,suburbs landlord,47
+2021,rest of Wisconsin landlord,owner occupied,185
+2021,rest of Wisconsin landlord,rest of Wisconsin landlord,85
+2021,rest of Wisconsin landlord,suburbs landlord,45
 2021,suburbs landlord,financial institution,7
 2021,suburbs landlord,Milwaukee-based landlord,324
-2021,suburbs landlord,outside WI landlord,357
+2021,suburbs landlord,outside WI landlord,359
 2021,suburbs landlord,owner occupied,1193
 2021,suburbs landlord,rest of Wisconsin landlord,62
-2021,suburbs landlord,suburbs landlord,840
+2021,suburbs landlord,suburbs landlord,842
 2022,financial institution,financial institution,1
 2022,financial institution,Milwaukee-based landlord,21
-2022,financial institution,outside WI landlord,19
-2022,financial institution,owner occupied,9
+2022,financial institution,outside WI landlord,17
+2022,financial institution,owner occupied,11
 2022,financial institution,rest of Wisconsin landlord,1
 2022,financial institution,suburbs landlord,13
-2022,Milwaukee-based landlord,financial institution,4
-2022,Milwaukee-based landlord,Milwaukee-based landlord,542
-2022,Milwaukee-based landlord,outside WI landlord,281
-2022,Milwaukee-based landlord,owner occupied,490
-2022,Milwaukee-based landlord,rest of Wisconsin landlord,51
-2022,Milwaukee-based landlord,suburbs landlord,214
+2022,Milwaukee-based landlord,financial institution,5
+2022,Milwaukee-based landlord,Milwaukee-based landlord,556
+2022,Milwaukee-based landlord,outside WI landlord,279
+2022,Milwaukee-based landlord,owner occupied,493
+2022,Milwaukee-based landlord,rest of Wisconsin landlord,52
+2022,Milwaukee-based landlord,suburbs landlord,212
 2022,outside WI landlord,financial institution,1
 2022,outside WI landlord,Milwaukee-based landlord,70
-2022,outside WI landlord,outside WI landlord,318
-2022,outside WI landlord,owner occupied,233
+2022,outside WI landlord,outside WI landlord,320
+2022,outside WI landlord,owner occupied,231
 2022,outside WI landlord,rest of Wisconsin landlord,14
-2022,outside WI landlord,suburbs landlord,66
-2022,owner occupied,financial institution,27
-2022,owner occupied,Milwaukee-based landlord,301
-2022,owner occupied,outside WI landlord,147
-2022,owner occupied,owner occupied,2789
-2022,owner occupied,rest of Wisconsin landlord,40
-2022,owner occupied,suburbs landlord,221
+2022,outside WI landlord,suburbs landlord,65
+2022,owner occupied,financial institution,26
+2022,owner occupied,Milwaukee-based landlord,296
+2022,owner occupied,outside WI landlord,149
+2022,owner occupied,owner occupied,2837
+2022,owner occupied,rest of Wisconsin landlord,38
+2022,owner occupied,suburbs landlord,219
 2022,rest of Wisconsin landlord,financial institution,1
-2022,rest of Wisconsin landlord,Milwaukee-based landlord,31
-2022,rest of Wisconsin landlord,outside WI landlord,44
-2022,rest of Wisconsin landlord,owner occupied,78
-2022,rest of Wisconsin landlord,rest of Wisconsin landlord,62
-2022,rest of Wisconsin landlord,suburbs landlord,45
+2022,rest of Wisconsin landlord,Milwaukee-based landlord,32
+2022,rest of Wisconsin landlord,outside WI landlord,43
+2022,rest of Wisconsin landlord,owner occupied,80
+2022,rest of Wisconsin landlord,rest of Wisconsin landlord,63
+2022,rest of Wisconsin landlord,suburbs landlord,44
 2022,suburbs landlord,financial institution,3
 2022,suburbs landlord,Milwaukee-based landlord,135
-2022,suburbs landlord,outside WI landlord,256
-2022,suburbs landlord,owner occupied,461
+2022,suburbs landlord,outside WI landlord,254
+2022,suburbs landlord,owner occupied,465
 2022,suburbs landlord,rest of Wisconsin landlord,22
 2022,suburbs landlord,suburbs landlord,348
